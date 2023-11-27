@@ -1,0 +1,26 @@
+.heading {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.feedback-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.feedback-item {
+  width: 30%;
+  padding: 10px;
+  display: flex;
+}
+.feedback-item__avatar img {
+  height: 60px;
+  width: auto;
+}
+.feedback-item__content {
+  margin: 5px;
+}
+.feedback-item__content p {
+  margin: 0 0 10px 0;
+}
+.feedback-item__author {
+  font-weight: 1000;
+}

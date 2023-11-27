@@ -1,0 +1,25 @@
+.login-form__unit {
+  display: flex;
+  width: 50%;
+  margin-bottom: 10px;
+}
+.login-form__unit label {
+  width: 250px;
+}
+.role,
+.single-sign-on {
+  margin: auto 0;
+}
+.role-list {
+  display: flex;
+  flex-direction: column;
+}
+.single-sign-on-list {
+  display: flex;
+  flex-direction: column;
+}
+.login-button {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}

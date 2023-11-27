@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Access Manager</title>
+    <link rel="stylesheet" href="./css/Formaccessmanager.css" />
+  </head>
+  <body>
+    <form action="" class="login-form">
+      <div class="login-form__unit">
+        <label for="username" class="login-form__unit-title"> Username: </label>
+        <input type="text" id="username" />
+      </div>
+      <div class="login-form__unit">
+        <label for="password" class="login-form__unit-title"> Password: </label>
+        <input type="password" id="password" />
+      </div>
+      <div class="login-form__unit">
+        <label for="city" class="login-form__unit-title">
+          City of Employment:
+        </label>
+        <input type="text" id="city" />
+      </div>
+      <div class="login-form__unit">
+        <label for="web-server" class="login-form__unit-title">
+          Web server:
+        </label>
+        <select name="" id="web-server">
+          <option value="0">Choose a server</option>
+        </select>
+      </div>
+      <div class="login-form__unit">
+        <label class="role">Please specify your role:</label>
+        <div class="role-list">
+          <label>
+            <input type="radio" name="role" value="admin" /> Admin
+          </label>
+          <label>
+            <input type="radio" name="role" value="engineer" /> Engineer
+          </label>
+          <label>
+            <input type="radio" name="role" value="manager" /> Manager
+          </label>
+          <label>
+            <input type="radio" name="role" value="guest" /> Guest
+          </label>
+        </div>
+      </div>
+      <div class="login-form__unit">
+        <label class="single-sign-on">Single Sign-on to the following: </label>
+        <div class="single-sign-on-list">
+          <label> <input type="checkbox" value="mail" /> Mail </label>
+          <label> <input type="checkbox" value="payroll" /> Payroll </label>
+          <label>
+            <input type="checkbox" value="self-service" /> Self-service
+          </label>
+        </div>
+      </div>
+      <div class="login-button">
+        <button>Login</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
