@@ -1,0 +1,54 @@
+label {
+  background-color: #d95824;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  margin-bottom: 10px;
+}
+
+.fa-plus,
+.fa-minus {
+  height: 100%;
+  width: 50px;
+  text-align: center;
+}
+.minus-1,
+.minus-2,
+.minus-3 {
+  display: none;
+}
+
+input {
+  display: none;
+}
+
+#question-1 ~ label,
+#question-2 ~ label,
+#question-3 ~ label {
+  display: block;
+  background-color: #d95824;
+  width: 100%;
+}
+
+input[id="question-1"]:checked ~ label .plus-1,
+input[id="question-2"]:checked ~ label .plus-2,
+input[id="question-3"]:checked ~ label .plus-3 {
+  display: none;
+}
+
+input[id="question-1"]:checked ~ label .minus-1,
+input[id="question-2"]:checked ~ label .minus-2,
+input[id="question-3"]:checked ~ label .minus-3 {
+  display: inline-block;
+}
+
+p {
+  padding: 0 20px 0 20px;
+  display: none;
+}
+
+input[id="question-1"]:checked ~ p,
+input[id="question-2"]:checked ~ p,
+input[id="question-3"]:checked ~ p {
+  display: block;
+}
