@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url(./fonts/Open_Sans/static/OpenSans-Regular.ttf);
+}
+.navbar {
+  width: 85%;
+}
+
+.menu-list {
+  list-style: none;
+  display: flex;
+}
+.menu-separate {
+  flex-grow: 1;
+  border: 1px solid #666;
+}
+
+.menu-item {
+  display: inline-block;
+  font-family: "Open Sans";
+  padding: 5px;
+  margin: 0;
+  border: 1px solid #666;
+  position: relative;
+}
+
+.menu-item a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #666;
+}
+.menu-item > a:hover {
+  background-color: #2da5da;
+  color: #fff;
+}
+a:hover ~ .sub-menu {
+  display: block;
+}
+
+.sub-menu {
+  display: none;
+  position: absolute;
+  left: -2px;
+  top: 60px;
+  width: 220px;
+  box-shadow: 1px 1px 4px #666;
+}
+.sub-menu li:first-child::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 19px;
+  border: 10px solid;
+  border-color: transparent transparent #fff transparent;
+}
+.sub-menu ul {
+  padding-left: 0;
+}
+.sub-menu li {
+  list-style: none;
+  border-bottom: 1px solid #666;
+}
+.sub-menu li i {
+  margin: 5px 10px;
+}
+
+.menu-item span {
+  padding: 0 5px;
+}
+
+.menu-separate {
+  display: inline-block;
+}
