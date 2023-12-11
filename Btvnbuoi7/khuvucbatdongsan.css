@@ -1,0 +1,75 @@
+@font-face {
+  font-family: "Asap";
+  src: url(./fonts/Asap-VariableFont_wdth\wght.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Asap";
+}
+.container {
+  margin: 0 100px;
+}
+.container h2 {
+  font-size: 20px;
+  margin: 15px 0;
+}
+.location {
+  display: flex;
+  justify-content: space-between;
+}
+.location button {
+  display: flex;
+  flex-direction: column;
+  background-color: #e5e5e5;
+  font-size: 10px;
+  line-height: 1.5;
+  padding: 5px 20px;
+  border-radius: 25px;
+  border: none;
+  margin-bottom: 15px;
+}
+.location button:hover {
+  background-color: #af7c37;
+  color: #fff;
+}
+.location button span {
+  margin: auto;
+}
+.location button span:first-child {
+  font-size: 15px;
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.projects .projects-item {
+  position: relative;
+  width: 32%;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #c8c8c8;
+}
+.projects .projects-item img {
+  width: 100%;
+  border-radius: 5px;
+  display: block;
+}
+
+.projects .projects-item p {
+  color: #fff;
+}
+.projects .projects-item p:first-of-type {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 20px;
+}
+.projects .projects-item p:nth-of-type(2) {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+}

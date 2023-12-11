@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Asap";
+  src: url(./fonts/Asap-VariableFont_wdth\wght.ttf);
+}
+* {
+  padding: none;
+  margin: 0;
+  box-sizing: border-box;
+}
+.header {
+  height: 540px;
+  background-image: url(https://ircdn.vingroup.net/storage/Uploads/Photos/Landmark81banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.profile {
+  display: flex;
+  margin: 0 50px;
+  position: relative;
+  top: 405px;
+}
+.avatar {
+  height: 170px;
+  width: 210px;
+  background-color: #fff;
+  text-align: center;
+}
+.avatar img {
+  height: 76px;
+  width: 127px;
+  margin-top: 45px;
+}
+.info {
+  margin-left: 15px;
+  font-family: "Asap", sans-serif;
+  color: #fff;
+  margin-top: 20px;
+  flex: 1;
+}
+.info h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.info p {
+  display: inline-block;
+  font-size: 15px;
+  margin-right: 30px;
+  margin-bottom: 36px;
+}
+.info p b {
+  font-size: 23px;
+}
+.info__navbar {
+}
+.info__navbar-list {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  font-weight: 700;
+  height: 34px;
+  margin-left: auto;
+}
+.info__navbar-item {
+  padding: 10px 0;
+  border-bottom: 2px solid transparent;
+  margin: 1px 15px;
+  text-decoration: none;
+  color: #000;
+  line-height: 34px;
+}
+.info__navbar-item:hover {
+  color: #e1756c;
+  border-color: #e1756c;
+}
