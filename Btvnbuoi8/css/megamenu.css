@@ -1,0 +1,132 @@
+@font-face {
+  font-family: "Manrope";
+  src: url(../fonts/Manrope-VariableFont_wght.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+}
+
+body {
+  background-image: url(https://fastly.picsum.photos/id/620/1000/1000.jpg?hmac=6GDunDCfNf0sFoL-rDgQeuTB2UeYDl22hk1Sgle3xrk);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Manrope";
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 50px 0 50px;
+}
+
+header .logo {
+}
+
+header .logo h1 {
+  font-size: 4rem;
+}
+
+header .logo img {
+  width: 4rem;
+  height: 4rem;
+  vertical-align: middle;
+}
+
+.navbar {
+  display: flex;
+  line-height: 4rem;
+  font-size: 1.8rem;
+}
+.navbar > i {
+  margin: 20px 5px;
+}
+.navbar > i:hover {
+  opacity: 0.7;
+}
+
+.navbar-item {
+  padding: 1rem 1.5rem;
+}
+
+.navbar-item:hover::after {
+  content: "";
+  height: 20px;
+  width: 80%;
+  background-color: transparent;
+  position: relative;
+  top: 1rem;
+  left: 0;
+  right: 0;
+  display: block;
+}
+
+.navbar-item i {
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+.navbar-item:hover label {
+  opacity: 0.7;
+}
+.navbar-item:hover .mega-menu {
+  display: flex;
+}
+
+.mega-menu {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 75px;
+  background-color: #fff;
+  display: none;
+}
+
+.menu {
+  margin: 2rem 4rem;
+}
+
+.menu > h2 {
+  font-size: 2rem;
+  line-height: 4rem;
+}
+
+.usage .links {
+  height: 12rem;
+  width: 330px;
+}
+
+.styleguide .links {
+  width: 330px;
+  height: 16rem;
+}
+.elements {
+  border-left: 2px solid #ddd;
+  padding-left: 4rem;
+}
+
+.elements .links {
+  width: 700px;
+  height: 36rem;
+}
+
+.menu .links {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.menu .links a {
+  line-height: 4rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #666;
+}
+
+.links a:hover {
+  color: #000;
+}

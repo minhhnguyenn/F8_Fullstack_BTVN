@@ -1,0 +1,69 @@
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/Roboto-Regular.ttf);
+}
+html {
+  font-size: 10px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.services {
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Roboto";
+}
+
+.services > h2 {
+  text-align: center;
+  margin: 22px 0;
+  font-size: 3rem;
+}
+
+.services > p {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.service-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.service-item {
+  width: 30%;
+  text-align: center;
+  padding: 2rem 1rem 0;
+}
+
+.service-img {
+  width: 5.5rem;
+  height: 5.5rem;
+  font-size: 0;
+  margin: 0 auto 2rem;
+}
+
+.service-name {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.service-info {
+  height: 8rem;
+  font-size: 1.2rem;
+  line-height: 2;
+  color: #666;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-color: #333f9d;
+  padding: 1rem 3rem;
+  margin-bottom: 2rem;
+}
