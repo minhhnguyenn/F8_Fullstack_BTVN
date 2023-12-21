@@ -1,0 +1,62 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eeedef;
+}
+
+.simples-slideshow {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-top: 50px;
+  position: relative;
+}
+
+.article {
+  display: inline-block;
+}
+.article label {
+  font-size: 20px;
+  padding: 15px;
+  border: 5px solid #fff;
+  background-color: #fff;
+}
+
+.content {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 45px;
+  left: 52px;
+  text-align: left;
+  padding: 20px;
+  background-color: #fff;
+  overflow-x: scroll;
+  width: 828px;
+  height: auto;
+  transform: rotatex(90deg);
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+  transform-origin: top;
+}
+
+input:checked ~ .content {
+  opacity: 1;
+  transform: rotatex(0);
+  transition-property: transform, opacity;
+  transform-origin: top;
+  transition-duration: 1s;
+}
+
+input:checked ~ label,
+input:hover ~ label {
+  background-color: #4298db;
+  color: #fff;
+  transition-property: background-color, color;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}

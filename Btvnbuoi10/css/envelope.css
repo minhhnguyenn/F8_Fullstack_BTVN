@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #323543;
+}
+
+.box {
+  position: relative;
+  top: 100px;
+  width: 140px;
+  height: 200px;
+  margin: auto;
+}
+
+.box:hover .envelope {
+  top: 40px;
+  transition-property: top;
+  transition-duration: 2s;
+}
+.box:hover .open-envelope {
+  border-bottom-width: 40px;
+  top: 40px;
+  transition-property: top, border-bottom-width;
+  transition-duration: 2s;
+}
+
+.open-envelope {
+  width: 0;
+  height: 0;
+  border: solid;
+  border-bottom-width: 0px;
+  border-right-width: 70px;
+  border-left-width: 70px;
+  border-color: transparent transparent #cb4e43 transparent;
+  position: relative;
+  top: 0;
+  transition-property: top, border-bottom-width;
+  transition-duration: 2s;
+}
+
+.envelope {
+  z-index: 0;
+  width: 140px;
+  height: 80px;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  transition-property: top;
+  transition-duration: 2s;
+  background-color: #cb4e43;
+}
+
+.mail {
+  border-top: 40px solid transparent;
+  border-bottom: 40px solid #cf5a4f;
+  border-right: 70px solid #e36357;
+  border-left: 70px solid #dd564b;
+  position: absolute;
+  top: 0px;
+  left: px;
+  z-index: 2;
+}
+
+.box:hover .letter {
+  height: 100px;
+  transition-property: height;
+  transition-duration: 1s;
+  transition-delay: 0.5s;
+}
+.letter {
+  z-index: 1;
+  width: 100px;
+  height: 0px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  transition-property: height;
+  transition-duration: 1s;
+}
+
+.shadow {
+  width: 140px;
+  height: 20px;
+  background-color: #2d252588;
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0;
+}

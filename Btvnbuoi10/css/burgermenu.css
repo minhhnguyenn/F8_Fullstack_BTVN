@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #31a8f7;
+}
+
+.title {
+  margin: 200px 0;
+}
+
+.title > h1 {
+  text-align: right;
+  margin-right: 200px;
+  font-size: 50px;
+}
+
+.title > p {
+  text-align: right;
+  margin-right: 200px;
+  font-size: 20px;
+}
+
+.title > p > span {
+  font-size: 30px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menu > label {
+  position: relative;
+  z-index: 1;
+  font-size: 30px;
+  color: #31a8f7;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+label .fa-arrow-left {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  opacity: 0;
+  transform: rotate(-180deg);
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+}
+
+input:checked ~ label .fa-bars {
+  display: none;
+}
+
+input:checked ~ label .fa-arrow-left {
+  opacity: 1;
+  transform: rotate(0deg);
+  transition-property: transform, opacity;
+  transition-duration: 1s;
+}
+
+.menu > input:checked ~ .overlay {
+  width: 200vw;
+  height: 200vh;
+  border-bottom-right-radius: 100%;
+  transition-property: width, height;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.menu .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background-color: #fff;
+  border-bottom-right-radius: 100%;
+  transition-property: width, height;
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+
+.menu .list {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+.menu > input:checked ~ .list {
+  opacity: 1;
+  margin-top: 22px;
+  transition-property: opacity;
+  transition-duration: 1s;
+}
+
+.menu .list button {
+  text-align: left;
+  width: 200px;
+  margin-bottom: 15px;
+  padding: 5px 0 5px 40px;
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+  top: 15px;
+  border: none;
+  background-color: #ffffff00;
+  color: #31a8f7;
+}
+
+.menu .list button:hover {
+  cursor: pointer;
+  background-color: #211c1c2f;
+  transition: background-color 0.2s linear;
+}
