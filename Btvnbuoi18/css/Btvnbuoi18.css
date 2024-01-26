@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section {
+  font-size: 0;
+}
+
+div {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+}
+.black-square {
+  background-color: black;
+}
+.white-square {
+  background-color: white;
+  border: 1px solid #000;
+}
