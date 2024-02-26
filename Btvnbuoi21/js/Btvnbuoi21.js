@@ -68,3 +68,4 @@ document.write(`<p>mảng sau khi khoại bỏ các giá trị trùng lặp: ${r
 // bài 4
 
 
+
